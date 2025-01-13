@@ -3,26 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Website</title>
+    <title>Game Tebak Kata</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function pindahWebsite() {
-            window.location.href = "https://www.smk-ishlahiyah.sch.id/";
-        }
-    </script>
-     <script>
-        function pindahWebsite1() {
-            window.location.href = "https://linktr.ee/ManaWTH";
-        }
-    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>By L</h1>
-        <p>L sepuluh Tkj.</p>
-        <    <button onclick="pindahWebsite()">web sekolah</button>
-                <    <button onclick="pindahWebsite1()">follow</button>
-        <script src="script.js"></script>
+    <div id="game-container">
+        <h1><strong>Game Tebak Kata</strong></h1>
+        <p id="level-display">Level: 1</p>
+        <p id="score-display">Skor: 0</p>
+        <p id="lives-display">Nyawa: 4</p>
+        <p id="clue">kata kunci: Sebuah kata rahasia</p>
+        <div id="word-display"></div>
+        <input type="text" id="letter-input" maxlength="1" placeholder="Jawab">
+        <button id="guess-button">Tebak Huruf</button>
+        <button id="hint-button">apa!!</button>
+        <button id="restart-button">Ulangi Permainan</button>
+        <p id="feedback"></p>
     </div>
     <script src="script.js"></script>
 </body>
